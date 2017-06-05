@@ -1,3 +1,5 @@
+# clear console by CTR + L
+
 # assigning value to variable
 # by operator =
 a = 3
@@ -18,7 +20,7 @@ svetlyo
 krasen
 
 # assigning value to variable
-# via assign function
+# via assign() function
 
 assign("myVar", 10)
 myVar *9
