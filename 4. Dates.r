@@ -1,3 +1,4 @@
+# as.Date() variable of Date type
 var1 = as.Date("2017-06-02")
 var2 = "2017-06-02"
 class(var1)
