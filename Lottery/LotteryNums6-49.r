@@ -1,11 +1,8 @@
 #Lottery Numbers
 #6/49
 
-doc <- read.csv("/home/svet/git/R-Language-lessons/lottery.csv", TRUE, ",")
-doc
+library(plyr)
 
-v<-table(doc$Num)
-tail(v)
-
-freqtab <- with(doc, table(Num, AllNums))
-freqtab
+doc <- read.csv("LNC.csv", TRUE)
+y <- count(doc)
+barplot(y$freq, names.arg = y$NUM,main = "6/49")
