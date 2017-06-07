@@ -1,0 +1,2 @@
+"Num"	"Frequency"
+4	1
