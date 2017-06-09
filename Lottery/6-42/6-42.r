@@ -2,9 +2,9 @@
   #6/42
   
   library(plyr)
-setwd("/home/svet/git/R-Language-lessons/Lottery/5-35")
+setwd("/home/svet/git/R-Language-lessons/Lottery/6-42")
 
-doc <- read.csv("535.csv", TRUE)
+doc <- read.csv("6-42.csv", TRUE)
 y <- count(doc)
 barplot(y$freq, names.arg = y$NUM,main = "6/42")
 #?barplot
@@ -52,3 +52,4 @@ write.table(remCol[19:24, ], file = "4.fouth6.txt", sep = "\t", row.names = FALS
 write.table(remCol[25:30, ], file = "5.fifth6.txt", sep = "\t", row.names = FALSE)
 write.table(remCol[31:36, ], file = "6.sixth6.txt", sep = "\t", row.names = FALSE)
 write.table(remCol[37:42, ], file = "7.seventh6.txt", sep = "\t", row.names = FALSE)
+
