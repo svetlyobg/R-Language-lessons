@@ -1,10 +1,10 @@
-  #Lottery Numbers
-  #6/42
-  
-  library(plyr)
-setwd("/home/svet/git/R-Language-lessons/Lottery/6-42")
+#Lottery Numbers
+#6/42
 
-doc <- read.csv("6-42.csv", TRUE)
+library(plyr)
+setwd("R:\\R\\R-Language-lessons\\Lottery\\6-42")
+
+doc <- read.csv("642.csv", TRUE)
 y <- count(doc)
 barplot(y$freq, names.arg = y$NUM,main = "6/42")
 #?barplot
@@ -42,7 +42,7 @@ remCol[13:18, ] #3rd 6 most freq nums
 remCol[19:24, ] #4th 6 most freq nums
 remCol[25:30, ] #5th 6 most freq nums
 remCol[31:36, ] #6th 6 most freq nums
-tail(remCol) #remCol[37:42, ] #7th 6 most freq nums
+remCol[37:42, ] #7th 6 most freq nums
 
 
 write.table(head(remCol), file = "1.first6.txt", sep = "\t", row.names = FALSE)
@@ -52,4 +52,3 @@ write.table(remCol[19:24, ], file = "4.fouth6.txt", sep = "\t", row.names = FALS
 write.table(remCol[25:30, ], file = "5.fifth6.txt", sep = "\t", row.names = FALSE)
 write.table(remCol[31:36, ], file = "6.sixth6.txt", sep = "\t", row.names = FALSE)
 write.table(remCol[37:42, ], file = "7.seventh6.txt", sep = "\t", row.names = FALSE)
-
