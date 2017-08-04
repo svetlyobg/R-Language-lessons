@@ -1,10 +1,11 @@
 #Lottery Numbers
 #6/49
+#тираж 61
 
 library(plyr)
 setwd("R:\\R\\R-Language-lessons\\Lottery\\6-49")
 
-doc <- read.csv("LNC.csv", TRUE)
+doc <- read.csv("LNC1.csv", TRUE)
 y <- count(doc)
 barplot(y$freq, names.arg = y$NUM,main = "6/49")
 #?barplot
@@ -55,3 +56,4 @@ write.table(remCol[31:36, ], file = "6.sixth6.txt", sep = "\t", row.names = FALS
 write.table(remCol[37:42, ], file = "7.seventh6.txt", sep = "\t", row.names = FALSE)
 write.table(remCol[43:48, ], file = "8.last6.txt", sep = "\t", row.names = FALSE)
 write.table(remCol[49, ], file = "9.theLonelyNumber.txt", sep = "\t", row.names = FALSE)
+
