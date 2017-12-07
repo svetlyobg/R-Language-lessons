@@ -1,6 +1,6 @@
 #Lottery Numbers
 #6/49
-#тираж 61
+#тираж 97
 
 library(plyr)
 setwd("R:\\R\\R-Language-lessons\\Lottery\\6-49")
